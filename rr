@@ -1,0 +1,15 @@
+sudo apt -y install zsh
+mkdir -p ~/.local/share/fonts 
+cp "MesloLGS NF Regular.ttf" ~/.local/share/fonts
+cp "MesloLGS NF Bold.ttf" ~/.local/share/fonts
+cp "MesloLGS NF Italic.ttf" ~/.local/share/fonts
+cp "MesloLGS NF Bold Italic.ttf" ~/.local/share/fonts
+fc-cache -f -v 
+# clear
+Upgrading your Shell
+echo
+zsh --version
+echo
+echo Starting...
+sleep 2
+zsh
