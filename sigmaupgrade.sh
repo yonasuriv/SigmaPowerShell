@@ -39,6 +39,8 @@ zsh_install
 fonts
 powerlevel
 logo
+echo 
+echo "If you want to do an advanced customization of your shell, please run: p10k configure"
+echo
 exec zsh
-
 
