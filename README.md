@@ -1,3 +1,3 @@
 # Sigma PowerShell
 
-Auto upgrade with one click using Power Level 10k ZSH
+Auto upgrade your bash terminal with one click using Power Level 10k ZSH
