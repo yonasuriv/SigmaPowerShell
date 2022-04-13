@@ -5,7 +5,7 @@ clear
 
 fonts (){
 mkdir -p ~/.local/share/fonts 
-cp /fonts/* ~/.local/share/fonts
+cp ./fonts/* ~/.local/share/fonts
 # cp "MesloLGS NF Regular.ttf" ~/.local/share/fonts
 # cp "MesloLGS NF Bold.ttf" ~/.local/share/fonts
 # cp "MesloLGS NF Italic.ttf" ~/.local/share/fonts
@@ -15,9 +15,9 @@ clear
 }
 
 powerlevel (){
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.powerlevel10k
 echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
-cp /core/* ~/
+cp ./core/* ~/
 clear
 }
 
