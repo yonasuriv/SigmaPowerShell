@@ -1,3 +1,5 @@
+. ./.iness
+
 logo (){
 echo Starting...
 sleep 2
