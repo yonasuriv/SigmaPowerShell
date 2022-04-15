@@ -1,7 +1,52 @@
 . ./.shcss.sh
-. ./.iness.sh
+
+# Essentials dependencies or sofware that will be automatically installed
+
+askprompt(){
+while true; do
+    read -p " Are your running this script from a live ISO? [y/n]: "  input
+    case $input in
+        [yY]*)
+            clear
+            logo 
+            menu
+            main_menu
+            break
+            ;;
+        [nN]*)
+            OS
+            sudo $os update
+            sudo $os -y upgrade
+            break
+            ;;
+         *)
+            break
+    esac
+done
+}
+
+OS () {
+echo
+echo "$green Below is a list of all Operating Systems:  $end"
+echo """
+    $yellow Debian / Ubuntu / Mint Linux $end and friends users use $red apt $end command.
+    $yellow CentOS / RHEL / Red Hat / Fedora Linux $end and friends users use $red yum $end command.
+    $yellow Suse / OpenSUSE Linux $end users use $red zypper $end command.
+    $yellow Slackware Linux $end users use $red slackpkg $end command.
+    $yellow Arch Linux $end users use $red pacman $end command.
+    $yellow Gentoo Linux $end users use $red emerge $end command.
+    $yellow Alpine Linux $end users use $red apk $end command.
+    $yellow MacOS $end users use $red pacman $end command.
+    $yellow Windows $end users use $red apt $end command. (you will need to have WSL installed)
+    """
+    echo "What $red command $end your OS uses?: " 
+    read os 
+}
 
 logo (){
+clear
+echo Starting...
+sleep 2
 clear
 echo
 echo "   ██████  ██▓  ▄████  ███▄ ▄███▓ ▄▄▄          ██▓███   ▒█████   █     █░▓█████  ██▀███    ██████  ██░ ██ ▓█████  ██▓     ██▓    ";
@@ -16,36 +61,7 @@ echo "       ░   ░        ░        ░         ░  ░                ░
 echo 
 }
 
-zsh_install (){
-sudo apt -y install zsh
-clear
-}
-
-fonts (){
-mkdir -p ~/.local/share/fonts 
-cp ./fonts/* ~/.local/share/fonts
-# cp "MesloLGS NF Regular.ttf" ~/.local/share/fonts
-# cp "MesloLGS NF Bold.ttf" ~/.local/share/fonts
-# cp "MesloLGS NF Italic.ttf" ~/.local/share/fonts
-# cp "MesloLGS NF Bold Italic.ttf" ~/.local/share/fonts
-# c-cache -f -v
-clear
-}
-
-powerlevel (){
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.powerlevel10k
-clear
-cp -rT ./core ~/
-}
-
-zsh_install
-fonts
-powerlevel
+## Scripts Start Here
 logo
-echo 
-echo " If you want to do an advanced customization of your shell, please run: $green2 p10k configure $end"
 echo
-cp -rT ./core ~/
-echo "exec zsh" > ~/.bashrc
-exec zsh
-
+askprompt
