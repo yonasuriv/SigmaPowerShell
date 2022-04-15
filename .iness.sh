@@ -9,8 +9,6 @@ while true; do
         [yY]*)
             clear
             logo 
-            menu
-            main_menu
             break
             ;;
         [nN]*)

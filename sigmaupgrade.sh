@@ -41,6 +41,8 @@ cp -rT ./core ~/
 zsh_install
 fonts
 powerlevel
+echo " Loading Sigma Power Shell 10000 configuration..."
+sleep 3
 logo
 echo 
 echo " If you want to do an advanced customization of your shell, please run: $green2 p10k configure $end"
