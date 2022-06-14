@@ -37,7 +37,7 @@ echo """
     $yellow MacOS $end users use $red pacman $end command.
     $yellow Windows $end users use $red apt $end command. (you will need to have WSL installed)
     """
-    echo "What $red command $end your OS uses?: " 
+    echo "What $red command $end does your OS use?: " 
     read os 
 }
 
