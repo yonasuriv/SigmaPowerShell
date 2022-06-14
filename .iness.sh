@@ -41,11 +41,25 @@ echo """
     read os 
 }
 
-logo (){
+loader () {
 clear
-echo Starting...
+echo 
+credits
+sleep 1
+echo Starting..
 sleep 2
 clear
+}
+
+credits () {
+clear
+echo 
+echo Script created by: Jonathan Di Rico
+echo https://www.yonasuriv.com/
+echo
+}
+
+logo (){
 echo
 echo "   ██████  ██▓  ▄████  ███▄ ▄███▓ ▄▄▄          ██▓███   ▒█████   █     █░▓█████  ██▀███    ██████  ██░ ██ ▓█████  ██▓     ██▓    ";
 echo " ▒██    ▒ ▓██▒ ██▒ ▀█▒▓██▒▀█▀ ██▒▒████▄       ▓██░  ██▒▒██▒  ██▒▓█░ █ ░█░▓█   ▀ ▓██ ▒ ██▒▒██    ▒ ▓██░ ██▒▓█   ▀ ▓██▒    ▓██▒    ";
@@ -60,6 +74,7 @@ echo
 }
 
 ## Scripts Start Here
+loader
 logo
 echo
 askprompt
