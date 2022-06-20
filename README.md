@@ -5,6 +5,9 @@
 
 Auto upgrade your bash **terminal** with **one click** using Z shell with Power Level 10K upgraded engine.
 
+### Requeriments
+GNU/Linux Operating System
+
 ### Installation
 Simply clone this repository and run the following script on the terminal using:
 
