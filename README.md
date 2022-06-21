@@ -1,4 +1,5 @@
 
+
 # Sigma PowerShell
 
 ![SigmaPowerShell](https://user-images.githubusercontent.com/59540565/174658706-d0d0977d-51b6-4d36-9dd2-abcc171fcb7d.jpg)
@@ -38,7 +39,14 @@ Simply clone this repository and run the following script on the terminal using:
  3. Installs Z Shell
  4. Installs recommended fonts automatically 
  5. Installs the configuration I think it's the best one 
- -- You can change that by running the configuration wizard to your own
  6. Makes Z Shell your default shell by changing the exec on your bashrc
+ 
+You can change the configuration to the one you like most by running:
+
+```sigmaconfig```
+
+#### Credits
+
+This script was based on powerlevel10k by [romkatv](https://github.com/romkatv) 
 
 
