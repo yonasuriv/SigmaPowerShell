@@ -40,6 +40,8 @@ alias py='python3'
 alias please='sudo apt'
 alias fucking='sudo'
 alias sigmaconfig='p10k configure'
+alias yonasuriv='xdg-open https://www.yonasuriv.com'
+alias portfolio='xdg-open https://www.github.com/yonasuriv/portfolio'
 
 #####################################################
 # Auto completion / suggestion
