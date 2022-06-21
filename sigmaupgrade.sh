@@ -17,7 +17,7 @@ echo
 }
 
 zsh_install (){
-sudo apt -y install zsh
+sudo $os -y install zsh
 clear
 }
 

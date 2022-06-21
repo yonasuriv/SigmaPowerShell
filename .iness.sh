@@ -7,8 +7,7 @@ while true; do
     read -p " Are your running this script from a live ISO? [y/n]: "  input
     case $input in
         [yY]*)
-            clear
-            logo 
+            OS
             break
             ;;
         [nN]*)
