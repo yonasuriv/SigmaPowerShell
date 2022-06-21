@@ -37,6 +37,9 @@ alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 alias py='python3'
+alias please='sudo apt'
+alias fucking='sudo'
+alias sigmaconfig='p10k configure'
 
 #####################################################
 # Auto completion / suggestion

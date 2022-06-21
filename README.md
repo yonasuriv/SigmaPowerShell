@@ -10,7 +10,7 @@ Auto upgrade your bash **terminal** with **one click** using Z shell with Power 
 ![Before](https://user-images.githubusercontent.com/59540565/174824156-db4fb27d-3058-41fe-9c41-d9cb8899cff1.jpg)
 
 ### <p align="center">After</p>
-![After](https://user-images.githubusercontent.com/59540565/174824166-88ce56d0-c67d-4d13-bb2f-0a62c145240d.jpg)
+![After](https://user-images.githubusercontent.com/59540565/174834630-52408a60-5ce9-41b5-8222-63e2fc534f74.jpg)
 
 ### Requeriments
 -- GNU/Linux Operating System
@@ -40,4 +40,5 @@ Simply clone this repository and run the following script on the terminal using:
  5. Installs the configuration I think it's the best one 
  -- You can change that by running the configuration wizard to your own
  6. Makes Z Shell your default shell by changing the exec on your bashrc
+
 

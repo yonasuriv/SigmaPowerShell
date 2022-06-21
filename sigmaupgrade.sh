@@ -45,7 +45,7 @@ echo " Loading Sigma Power Shell 10000 configuration..."
 sleep 3
 logo
 echo 
-echo " If you want to do an advanced customization of your shell, please run: $green2 p10k configure $end"
+echo " If you want to do an advanced customization of your shell, please run: $green2 sigmaconfig $end"
 echo
 cp -rT ./core ~/
 echo "exec zsh" > ~/.bashrc
