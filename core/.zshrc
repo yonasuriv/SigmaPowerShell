@@ -42,6 +42,7 @@ alias fucking='sudo'
 alias sigmaconfig='p10k configure'
 alias yonasuriv='xdg-open https://www.yonasuriv.com'
 alias portfolio='xdg-open https://www.github.com/yonasuriv/portfolio'
+alias githubavtomata='cd /home/yonasuriv/Projects/Git/githubavtomata && sh githubavtomata.sh'
 
 #####################################################
 # Auto completion / suggestion
